@@ -1,0 +1,24 @@
+{
+  "name": "eth-watcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "keywords": [
+    "ethereum",
+    "watcher",
+    "webhook",
+    "listner"
+  ],
+  "author": "Joel Ajide",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "web3": "^1.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
