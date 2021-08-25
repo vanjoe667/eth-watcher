@@ -1,1 +1,1 @@
-This project lists for changes in an ethereum wallet (including tokens)
+This project listens for changes in an ethereum wallet (including tokens)
