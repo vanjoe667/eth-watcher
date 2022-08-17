@@ -15,8 +15,15 @@
   "author": "Joel Ajide",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.25.0",
     "dotenv": "^10.0.0",
-    "web3": "^1.5.2"
+    "eth-balance-checker": "^0.1.2",
+    "ethereumjs-abi": "^0.6.8",
+    "ethereumjs-tx": "^2.1.2",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
+    "tronweb": "^4.1.0",
+    "web3": "^1.7.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"

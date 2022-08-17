@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = web3 => {
-    const account = '0x443a0fced533cc1f3c780b3def81da471a3b12ad'.toLowerCase();
+    const account = '0x6b1dd7690BB07c79F664f66942D0290f2D3A3a71'.toLowerCase();
 
     return {
         async checkLastBlock(){
@@ -13,8 +13,8 @@ module.exports = web3 => {
                     if(transaction){
                         if(transaction.to){
                             if (account === transaction.to.toLowerCase()) {
-                                console.log(`[+] Transaction found on block ${ block.number }`,transaction);
-                                console.log({ address: transaction.from, value: web3.utils.fromWei(transaction.value, 'ether'), timestamp: new Date() });
+                                console.log(`[+] Transaction found on block ${ block.number }`);
+                                console.log({ hash: transaction.hash, address: transaction.from, value: web3.utils.fromWei(transaction.value, 'ether'), timestamp: new Date() });
                             }
                         }
                     }
@@ -31,8 +31,8 @@ module.exports = web3 => {
                         let transaction = await web3.eth.getTransaction(tx);
                         if(transaction.to){
                             if (account === transaction.to.toLowerCase()) {
-                                console.log(`[++] Transaction found on block ${ block.number }`,transaction);
-                                console.log({ address: transaction.from, value: web3.utils.fromWei(transaction.value, 'ether'), timestamp: new Date() });
+                                console.log(`[++] Transaction found on block ${ block.number }`);
+                                console.log({ hash: transaction.hash, address: transaction.from, value: web3.utils.fromWei(transaction.value, 'ether'), timestamp: new Date() });
                             }
                         }
                     }
